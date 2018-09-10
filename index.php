@@ -3,7 +3,9 @@
 	<head>
 		<title>Ejemplo - Numero01</title>
 		<body>
+
 			<h1>Bienveniedo a Mi primera clase de PHP</h1>
+			
 			<?php 
 
 				echo "Hola , Soy un Script de PHP"; 
@@ -222,7 +224,14 @@
 				<li>Laravel</li>
 				<li>Cake PHP</li>
 			</ul>
-
+			
+			<form action="post.php" method="post" accept-charset="utf-8">
+				
+				<p> Su nombre : <input type="text" id="nombre" name="p_nombre" ></p>
+				<p> Su edad : <input type="text" id="edad" name="p_edad" ></p>
+				<p><input type="submit" value="Enviar" /></p>
+			</form>
 
 	</head>
 </html>
+
