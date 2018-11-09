@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Bienvenido</title>
+  
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  
+  <link rel="stylesheet" href="assets/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="assets/css/_all-skins.min.css">    
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+  <!-- header -->
+  <header class="main-header">
+    <a href="/" class="logo">
+      <span class="logo-lg"><b>Admin</b></span>
+      <span class="logo-mini"><b>Admin</b></span>
+    </a>
+    <nav class="navbar navbar-static-top">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        
+      </a>
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- <img src="../img/periyar_univ.png" class="user-image" alt="User Image"> -->
+              <span class="hidden-xs">Marco Estrada Lopez</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="user-header">
+                <img src="../img/photo.jpeg " class="img-circle" alt="User Image">
+                <h2>Marco Estrada Lopez</h2>
+              </li>
+              <li class="user-footer">
+                <div class="pull-right">
+                  <a href="?c=login&a=CerrarSesion" class="btn btn-default btn-flat">Cerrar Sesion</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- sidebar -->
+  <aside class="main-sidebar">
+      <section class="sidebar">
+        <ul class="sidebar-menu">
+          <li><a href=""><i class="fa fa-circle-o text-green "></i> <span>item 1</span></a></li>
+          <li><a href="#"><i class="fa fa-circle-o text-green "></i> <span>item 2</span></a></li>
+          <li><a href="#"><i class="fa fa-circle-o text-green "></i> <span>item 3</span></a></li>
+          <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Mantenimientos</span>s
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+                            <li><a href="/?c=Autor&a=Index"><i class="fa fa-circle-o"></i> Autores </a></li>
+                
+                <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+                <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+                <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            ;
+                      </ul>
+        </li>
+      
+        </ul>
+      </section>
+  </aside>
+
+  <!-- Content -->
+  <div class="content-wrapper">
+       <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                  <h1 class="text-center"> Registro de Libros</h1>                           
+                </div>    
+            </div>
+            <div class="row form-group">
+              <div class="col-xs-12 col-sm-6">
+                <label for="nombre_libro">Titulo Libro</label>
+                <input type="text" class="form-control text-center" 
+                       id="nombre_libro" name ="nombre_libro" placeholder="Ingrese Nombre del Libro">
+                <span  id ="ErrorMensaje-nombre_libro" class="help-block"></span>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+              <label for="editorial_id">Editorial</label>
+                  <select name="editorial_id" id="editorial_id" class="form-control">
+                    <option value="1">Editorial Uno</option>
+                    <option value="2">Editorial Dos</option>
+                  </select>
+              </div>
+            </div>
+            
+            <div class="row form-group">
+              <div class="col-xs-12 col-sm-6">
+                <label for="estado_id">Estado</label>
+                  <select name="estado_id" id="estado_id" class="form-control">
+                    <option value="1">ACTIVO</option>
+                    <option value="2">INACTIVO</option>
+                  </select>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <label for="genero_id">Genero</label>
+                  <select name="genero_id" id="genero_id" class="form-control">
+                    <option value="1">Accion</option>
+                    <option value="2">Comedia</option>
+                  </select>
+              </div>          
+            </div>              
+            <div class="row">
+              <div class="col-xs-12 col-sm-3">
+                <label for="numero_paginas"># de páginas</label>
+                <input type="number" id="numero_paginas" class="form-control text-center" name="numero_paginas" value="1">
+                <span  id ="ErrorMensaje-numero_paginas" class="help-block"></span>
+              </div>
+              <div class="col-xs-12 col-sm-3">
+                <label for="anio_edicion">Año de Edición</label>
+                <input type="number" id="anio_edicion" class="form-control text-center" name="anio_edicion" value="1980">
+                <span  id ="ErrorMensaje-anio_edicion" class="help-block"></span>
+              </div>
+              <div class="col-xs-12 col-sm-3">
+                <label for="FechaPublicacion">Fecha de Publicación</label>
+                <input type="date" class="form-control text-center" id="FechaPublicacion" name ="FechaPublicacion" >
+                <span  id ="ErrorMensaje-FechaPublicacion" class="help-block"></span>
+              </div>
+              <div class="col-xs-12 col-sm-3">
+                <label for="codigo_isbn">ISBN</label>
+                <input type="text" id="codigo_isbn" class="form-control text-center" name="codigo_isbn" value="" placeholder ="codigo isbn">
+                <span  id ="ErrorMensaje-codigo_isbn" class="help-block"></span>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-xs-12">
+                <label for="resumen">Resumen</label>
+                <textarea name="resumen" id="resumen" class="form-control" rows="10" required></textarea>
+                <span  id ="ErrorMensaje-resumen" class="help-block"></span>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-xs-12">
+                <label for="Imagen">Imagen</label>
+                <input type="checkbox" name="bimagenReferencia" id="bimagenReferencia">
+                <input type="file" style="display: inline;" id="RutaImagenReferencia" name="RutaImagenReferencia"
+                  accept=".jpg, .jpeg, .png">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <fieldset>
+                <legend><h4>Autor o Autores en el Libro</h4></legend>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-2">
+                    <button type="button" class="btnAgregarAutor btn btn-success pull-left">
+                      <i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Agregar</button>
+                  </div>  
+                  <div class="col-xs-12 col-sm-6">
+                      <select name="autor_id" id="autor_id" class="form-control">
+                        <option value="1">Autor Uno</option>
+                        <option value="2">Autor Dos</option>
+                      </select>
+                  </div>
+                </div>  
+                  <span  id ="ErrorMensaje-tabla" class="help-block"></span>              
+                  <div class="table-responsive">
+                    <table id="tabla" class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th class="color-azul text-center">Autor</th>
+                          <th class="color-azul text-center">Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+              </fieldset>
+            </div>
+            
+            <div class="row">
+              <div class="col-xs-12">
+                <input type="submit" id ="btnRegistrarLibro" class="btnRegistrarLibro btn btn-success pull-left" value="Registrar Libro">
+              </div>
+            </div>
+            
+
+
+        </div>
+        <script src="assets/js/jquery-2.2.3.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
+        <script src="assets/js/aplicacion.js"></script>
+</body>
+</html>
